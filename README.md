@@ -13,7 +13,7 @@ We thank the authors for their work and for sharing their [implementation](https
 For specific packages, we refer the user to our conda env file `environment.yml`
 
 ```
-git clone https://github.com/quocthai9120/UW-NLP-Capstone-SP22.git && cd UW-NLP-Capstone-SP22
+git clone https://github.com/nyrddryn/img_captioning
 conda env create -f environment.yml
 conda activate clip_prefix_caption
 ```
