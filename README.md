@@ -9,7 +9,14 @@ We will use Clip and Prefix tuning for Image Captioning Problem.
 
 We thank the authors for their work and for sharing their [implementation](https://github.com/rmokady/CLIP_prefix_caption)
 
-## Setup
+## Setup env
+For specific packages, we refer the user to our conda env file `environment.yml`
+
+```
+git clone https://github.com/quocthai9120/UW-NLP-Capstone-SP22.git && cd UW-NLP-Capstone-SP22
+conda env create -f environment.yml
+conda activate clip_prefix_caption
+```
 ## COCO training
 
 Download [train_captions](https://drive.google.com/file/d/1D3EzUK1d1lNhD2hAvRiKPThidiVbP2K_/view?usp=sharing) to `data/coco/annotations`.
@@ -34,14 +41,6 @@ python train.py --only_prefix --data ./data/coco/oscar_split_<model_type>_train.
 For evaluation we use the [COCO caption evaluation tool](https://github.com/LuoweiZhou/coco-caption/tree/de6f385503ac9a4305a1dcdc39c02312f9fa13fc), we suggest installing it via
 ```
 pip install git+https://github.com/flauted/coco-caption.git@python23
-```
-
-For specific packages, we refer the user to our conda env file `environment.yml`
-
-```
-git clone https://github.com/quocthai9120/UW-NLP-Capstone-SP22.git && cd UW-NLP-Capstone-SP22
-conda env create -f environment.yml
-conda activate clip_prefix_caption
 ```
 
 To evaluate the model we need to save predicions:
